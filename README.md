@@ -15,13 +15,7 @@ npx browser-sync start --proxy "https://unisat.io" --host "192.168.254.146" --no
 launch-chrome-test.bat
 ```
 
-## 3. Create all 215 profile directories
-```powershell
-# Open PowerShell and run:
-.\create-profiles.ps1
-```
-
-## 4. Launch profiles in batches for testing
+## 3. Launch profiles in batches for testing
 ```powershell
 # Test with 10 profiles
 .\launch-chrome-batch.ps1 -TotalProfiles 10
@@ -36,13 +30,13 @@ launch-chrome-test.bat
 .\launch-chrome-batch.ps1 -TotalProfiles 215 -BatchSize 20
 ```
 
-## 5. Monitor system resources
+## 4. Monitor system resources
 ```powershell
 # In a separate PowerShell window:
 .\monitor-resources.ps1
 ```
 
-## 6. Emergency shutdown all Chrome
+## 5. Emergency shutdown all Chrome
 ```powershell
 # If needed to close all Chrome instances:
 Get-Process chrome | Stop-Process -Force
